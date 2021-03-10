@@ -4,11 +4,8 @@
 # @FileName: test.py
 
 
-def deleteItem(lst):
-    lst.pop(0)
-
-
-l = [1,2,3,4]
-l.pop(0)
-deleteItem(l)
-print(l)
+dic = {(1,0):True}
+if (1,0) in dic:
+    print('True')
+else:
+    print(False)
