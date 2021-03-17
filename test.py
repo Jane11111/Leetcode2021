@@ -3,10 +3,7 @@
 # @Author  : zxl
 # @FileName: test.py
 
-a = [1,2,3,4,5,6]
-
-b = a[0:4]
-
-b[0] = 5
+a = []
+b = []
+a.extend(b)
 print(a)
-print(b)
