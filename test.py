@@ -3,7 +3,5 @@
 # @Author  : zxl
 # @FileName: test.py
 
-a = []
-b = []
-a.extend(b)
+a = [1,'2']
 print(a)
