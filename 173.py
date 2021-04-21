@@ -13,15 +13,25 @@ class TreeNode:
 class BSTIterator:
 
     def __init__(self, root: TreeNode):
-        pass
+        self.lst = []
+        p = root
+        while p:
+            self.lst.append(p)
+            p = p.left
 
 
     def next(self) -> int:
-        pass
+        p = self.lst.pop()
+        v = p.val
+        p = p.right
+        while p:
+            self.lst.append(p)
+            p = p.left
+        return v
 
 
     def hasNext(self) -> bool:
-        pass
+        return len(self.lst)>0
 
 
 
