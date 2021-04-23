@@ -3,5 +3,7 @@
 # @Author  : zxl
 # @FileName: test.py
 
-a = [1,'2']
-print(a)
+import random
+
+n = random.random()
+print(n)

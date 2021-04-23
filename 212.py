@@ -3,6 +3,8 @@
 # @Author  : zxl
 # @FileName: 212.py
 
+# TODO 复杂度跟words长度有关
+
 class Solution:
 
     def dfs(self,word,visited,pos_dic,i,last_pos):
@@ -12,7 +14,7 @@ class Solution:
         if word[i] not in pos_dic:
             return False
         for x,y in pos_dic[word[i]]:
-            if (x==last_pos[0] and abs(y-last_pos[1])== 1 or y==last_pos[1] and abs(x-last_pos[0])==1) and visited[x][y] == False:
+            if  visited[x][y] == False and (x==last_pos[0] and abs(y-last_pos[1])== 1 or y==last_pos[1] and abs(x-last_pos[0])==1) :
                 visited[x][y] = True
                 f = self.dfs(word,visited,pos_dic,i+1,(x,y))
                 visited[x][y] = False
@@ -40,6 +42,16 @@ class Solution:
             visited.append([False for j in range(n)])
         ans = []
         for word in words:
+            stop = False
+            for c in word:
+                if c not in pos_dic:
+                    stop = True
+                    break
+            if stop:
+                continue
+
+
+
             c = word[0]
             if c not in pos_dic:
                 continue
@@ -52,3 +64,4 @@ class Solution:
                     ans.append(word)
                     break
         return ans
+
