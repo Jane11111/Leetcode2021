@@ -4,6 +4,10 @@
 # @FileName: test.py
 
 import random
+import numpy as np
 
-n = random.random()
-print(n)
+
+s = 'abcde'
+idx = [1,2,3]
+s2 = s[idx]
+print(s2)
