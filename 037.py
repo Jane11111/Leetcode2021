@@ -22,13 +22,17 @@ class Solution(object):
             s = board[k][j]
             if s != '.':
                 dic[s] = False
-        for k1 in range(i-1,i+2):
-            for k2 in range(j-1,j+2):
+
+        s1 = i//3
+        s2 = j//3
+        for k1 in range(s1*3,s1*3+3):
+            for k2 in range(s2*3,s2*3+3):
                 if k1 < 0 or k1>=n or k2<0 or k2>=n:
                     continue
                 s = board[k1][k2]
                 if s != '.':
                     dic[s] = False
+
         lst = []
         for k in dic:
             if dic[k]:
