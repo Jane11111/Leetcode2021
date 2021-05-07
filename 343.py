@@ -19,7 +19,7 @@ class Solution(object):
         return arr[n]
 
 obj = Solution()
-n = 4
+n = 10
 ans = obj.integerBreak(n)
 print(ans)
 
