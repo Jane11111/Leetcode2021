@@ -7,7 +7,6 @@ import random
 import numpy as np
 
 
-s = 'abcde'
-idx = [1,2,3]
-s2 = s[idx]
-print(s2)
+a = [2,1,3]
+b = np.argsort(a)
+print(b)
