@@ -6,7 +6,5 @@
 import random
 import numpy as np
 
-
-a = [2,1,3]
-b = np.argsort(a)
-print(b)
+s = '1'*0
+print(s)

@@ -4,13 +4,23 @@
 # @FileName: 714.py
 
 
-class Solution(object):
-    def maxProfit(self, prices, fee):
-        """
-        :type prices: List[int]
-        :type fee: int
-        :rtype: int
-        """
+
+class Solution:
+    def maxProfit(self, prices , fee: int) -> int:
+
+        dp0 = 0
+        dp1 = -prices[0]
+
+        for i in range(1,len(prices)):
+            dp0 = max(dp0,dp1+prices[i] -fee)
+            dp1 = max(dp1,dp0-prices[i])
+
+        return dp0
+
+
+
+
+
 
 
 
