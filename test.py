@@ -6,5 +6,6 @@
 import random
 import numpy as np
 
-s = '1'*0
-print(s)
+a = '\\'
+print(len(a))
+print(a[0])
