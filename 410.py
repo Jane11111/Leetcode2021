@@ -3,6 +3,9 @@
 # @Author  : zxl
 # @FileName: 410.py
 
+
+# 递归
+
 class Solution:
 
     def recSplit(self,nums,idx,m,dic):
