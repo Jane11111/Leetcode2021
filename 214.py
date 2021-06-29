@@ -3,7 +3,7 @@
 # @Author  : zxl
 # @FileName: 214.py
 
-
+# O(N^2) 超时
 class Solution:
     def shortestPalindrome(self, s: str) -> str:
 
