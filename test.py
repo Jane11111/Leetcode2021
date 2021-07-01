@@ -6,6 +6,4 @@
 import random
 import numpy as np
 
-a = '\\'
-print(len(a))
-print(a[0])
+print('0'>' ')
