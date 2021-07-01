@@ -3,10 +3,8 @@
 # @Author  : zxl
 # @FileName: 765.py
 
-class Solution(object):
-    def minSwapsCouples(self, row):
-        """
-        :type row: List[int]
-        :rtype: int
-        """
+class Solution:
+    def minSwapsCouples(self, row ) -> int:
 
+
+        pass
