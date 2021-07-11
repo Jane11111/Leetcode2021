@@ -3,7 +3,8 @@
 # @Author  : zxl
 # @FileName: Shopee2_2.py
 
-
+# 通过90%， 但是这种解法应该有问题
+# dp
 
 import heapq
 class Solution:

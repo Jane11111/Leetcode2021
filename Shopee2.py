@@ -4,6 +4,9 @@
 # @FileName: Shopee2.py
 
 
+# 通过50%， 可能因为超时
+#dfs 回溯
+
 class Solution:
 
     def isValid(self,x,y,m,n):
