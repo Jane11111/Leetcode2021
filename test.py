@@ -6,4 +6,9 @@
 import random
 import numpy as np
 
-print('0'>' ')
+print(np.log(24))
+
+print(np.log(48))
+print(np.log(72))
+print(np.log(432))
+print(np.log(192))
