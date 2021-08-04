@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021-06-16 20:21
+# @Time    : 2021-08-02 20:05
 # @Author  : zxl
-# @FileName: 410_3.py
+# @FileName: 410_6.py
 
-# O(Nlog(sum-max))
 
 class Solution:
 
-    def check(self,nums,max_val,m): # 是否存在最大值为max_val的切分方法
+    def check(self,nums,max_val,m):
 
-        cnt = 1
         sum_val = 0
+        cnt = 1
+
         for num in nums:
+
             sum_val+=num
             if sum_val>max_val:
                 cnt+=1
@@ -20,18 +21,20 @@ class Solution:
 
 
 
-    def splitArray(self, nums, m: int) -> int:
+    def splitArray(self, nums , m: int) -> int:
 
 
+
+        left = float('-inf')
         right = 0
-        left = 0
+
         for num in nums:
-            if num>left:
-                left = num
+            left = max(left,num)
             right += num
 
 
         while left<right:
+
             mid = (left+right)//2
 
             if self.check(nums,mid,m):
